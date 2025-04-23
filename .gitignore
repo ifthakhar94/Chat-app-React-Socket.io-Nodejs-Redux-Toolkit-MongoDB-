@@ -1,0 +1,25 @@
+# General
+.DS_Store
+*.log
+.env
+.env.local
+.vscode/
+.idea/
+
+# Node.js / Server
+/node_modules/
+/server/node_modules/ 
+/dist/
+/build/
+package-lock.json
+yarn.lock
+
+# Client (React)
+/client/node_modules/  
+/client/dist/
+/client/build/
+
+# Database/local files
+*.db
+*.sqlite
+dump.rdb
