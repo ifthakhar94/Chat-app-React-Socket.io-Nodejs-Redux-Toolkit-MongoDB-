@@ -4,6 +4,7 @@ import RegisterPage from "../pages/Register";
 import CheckEmailPage from "../pages/CheckEmail";
 import CheckPasswordPage from "../pages/CheckPassword";
 import HomePage from "../pages/Home";
+import MessagePage from "../pages/Message";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -12,6 +13,12 @@ const router = createBrowserRouter([
       {
         path: "/",
         element: <HomePage />,
+        children: [
+          {
+            path: ":userId",
+            element: <MessagePage />,
+          },
+        ],
       },
       {
         path: "/register",
