@@ -1,3 +1,11 @@
+
+import { Register } from '../features/Registration';
+
 export default function RegisterPage() {
-  return <div>Register</div>;
+  return (
+    
+   <>
+   <Register />
+   </>
+  );
 }
