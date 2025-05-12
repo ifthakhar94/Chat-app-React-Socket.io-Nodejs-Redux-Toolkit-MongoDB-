@@ -25,7 +25,16 @@ async function checkPassword(req, res) {
         maxAge: 1 * 24 * 60 * 60 * 1000,
     }
     res.cookie("token", token, cookieOptions);
-    res.status(200).json({ message: "Password is valid" });
+    res.status(200).json({ 
+        message: "Password is valid",
+        token: token,
+        data: {
+            id: user._id,
+            email: user.email,
+            name: user.name,
+            imageUrl: user.imageUrl
+        }
+    });
     } catch (error) {
         res.status(500).json({ error: error.message });
     }

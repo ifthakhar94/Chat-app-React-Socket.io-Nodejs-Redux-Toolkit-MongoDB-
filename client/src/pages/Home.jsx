@@ -1,8 +1,7 @@
 import { Outlet } from "react-router-dom";
-
+import { Home } from "../features/Home";
 export default function HomePage() {
-  return <div>Home
-    {/* Message component */}
-    <section><Outlet /></section>
-  </div>;
+  return <>
+    <Home />
+  </>;
 }

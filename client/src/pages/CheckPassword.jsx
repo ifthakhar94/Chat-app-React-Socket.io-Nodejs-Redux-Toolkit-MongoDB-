@@ -1,3 +1,7 @@
+import { Password } from "../features/Password";
+
 export default function CheckPasswordPage() {
-  return <div>CheckPassword</div>;
+  return <>
+  <Password />
+  </>;
 }

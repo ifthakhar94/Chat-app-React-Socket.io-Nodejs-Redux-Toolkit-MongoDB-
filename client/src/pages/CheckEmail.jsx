@@ -1,3 +1,7 @@
+import { CheckEmail } from "../features/CheckEmail";
+
 export default function CheckEmailPage() {
-  return <div>CheckEmail</div>;
+  return <>
+  <CheckEmail />
+  </>;
 }
