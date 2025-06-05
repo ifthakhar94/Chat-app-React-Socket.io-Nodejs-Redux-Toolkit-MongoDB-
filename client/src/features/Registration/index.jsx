@@ -26,8 +26,8 @@ export const Register = () => {
       try {
         setLoading(true);
         const regUrl = `${import.meta.env.VITE_API_ENDPOINT}/api/register`;
-        const response = await axios.post(regUrl, {...values, profilePic: userProfilePic});
-        console.log("response",response);
+        const response = await axios.post(regUrl, {...values, profile_pic: userProfilePic});
+        console.log("response",response.data.user);
         
         toast.success('Registration successful!', {
           duration: 3000,

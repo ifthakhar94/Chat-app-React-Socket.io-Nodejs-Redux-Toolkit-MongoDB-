@@ -1,3 +1,5 @@
+import Message from "../features/Message/Message";
+
 export default function MessagePage() {
-  return <div>Message</div>;
+  return <Message />;
 }

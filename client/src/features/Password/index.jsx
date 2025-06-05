@@ -24,7 +24,7 @@ export const Password = () => {
   }, [state]);
     const onFinish = async (values) => {
 
-      console.log("state data", state?.data);
+      // console.log("state data", state?.data);
       try {
         setLoading(true);
         const payload = {
@@ -51,7 +51,7 @@ export const Password = () => {
           dispatch(setToken(response?.data?.token));
           localStorage.setItem("token", response?.data?.token);
         }
-        navigate('/login',
+        navigate('/home',
             {
                 state:{
                     data:response?.data?.data
